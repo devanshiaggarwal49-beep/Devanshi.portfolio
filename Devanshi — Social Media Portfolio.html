@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<!-- saved from url=(0261)file:///Users/devanshiaggarwal/Library/Application%20Support/Claude/local-agent-mode-sessions/2452925d-ec5e-4a84-89c2-504cde6215ad/16c7a211-978f-4c9b-8f1b-2140cafbec06/local_74143a66-e4aa-4166-ad02-e25e3b63b87c/outputs/manhas_social_media_portfolio.html#contact -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devanshi — Social Media Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./Devanshi — Social Media Portfolio_files/css2" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f5f1ea;
+    --paper:#faf7f1;
+    --ink:#262320;
+    --muted:#766f64;
+    --pink:#e9a3b8;
+    --pink-deep:#dd7d99;
+    --pink-soft:#f7d6e0;
+    --charcoal:#1b1916;
+    --line:#ddd5c6;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Jost',sans-serif;
+    overflow-x:hidden;
+  }
+  .grid-bg{
+    background-image:
+      linear-gradient(var(--line) 1px,transparent 1px),
+      linear-gradient(90deg,var(--line) 1px,transparent 1px);
+    background-size:48px 48px;
+    background-color:var(--cream);
+  }
+  h1,h2,h3{
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+    margin:0;
+  }
+  .script{
+    font-family:'Yellowtail',cursive;
+    color:var(--pink-deep);
+    font-weight:400;
+  }
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
+
+  /* NAV */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(245,241,234,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1140px;margin:0 auto;padding:22px 32px;
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .nav-logo{font-family:'Yellowtail',cursive;font-size:28px;color:var(--ink);}
+  .nav-links{display:flex;gap:34px;font-size:13px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;}
+  .nav-links a{border-bottom:1px solid var(--ink);padding-bottom:3px;}
+  .nav-links a:hover{color:var(--pink-deep);border-color:var(--pink-deep);}
+
+  /* HERO */
+  .hero{padding:110px 0 90px;text-align:center;}
+  .hero-eyebrow{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:22px;}
+  .hero-title{
+    font-size:64px;
+    line-height:1.18;
+    max-width:780px;
+    margin:0 auto;
+    font-weight:700;
+  }
+  .hero-title .script{font-size:1.15em;}
+  .hero-sub{
+    font-size:17px;color:var(--muted);max-width:480px;margin:28px auto 0;line-height:1.7;
+  }
+  .hero-btn{
+    display:inline-block;margin-top:34px;
+    background:var(--pink);color:var(--charcoal);
+    padding:15px 34px;border-radius:999px;
+    font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
+    transition:background .2s;
+  }
+  .hero-btn:hover{background:var(--pink-deep);color:#fff;}
+
+  /* HOOK BAND */
+  .hook{
+    position:relative;
+    background:linear-gradient(135deg,#e9b9c4,#d9c2cf);
+    padding:70px 0 90px;
+    overflow:hidden;
+  }
+  .hook-note{
+    background:var(--paper);
+    max-width:560px;
+    margin:0 auto;
+    padding:38px 42px;
+    border-radius:4px;
+    box-shadow:0 18px 40px rgba(0,0,0,0.18);
+    transform:rotate(-1.2deg);
+    font-family:'Playfair Display',serif;
+    font-size:21px;
+    line-height:1.55;
+    font-weight:500;
+  }
+  .hook-note span{color:var(--pink-deep);font-style:italic;}
+
+  /* SECTION SHELL */
+  .section{padding:90px 0;}
+  .section.dark{background:var(--charcoal);color:var(--cream);}
+  .eyebrow{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+  .section.dark .eyebrow{color:#a39b8c;}
+  .section h2{font-size:42px;margin-bottom:46px;}
+
+  /* ABOUT */
+  .about-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:60px;align-items:center;}
+  .about-photo{
+    aspect-ratio:4/5;
+    border-radius:28px;
+    background:linear-gradient(160deg,#cfc4d6,#e9b9c4);
+    display:flex;align-items:center;justify-content:center;
+    color:rgba(38,35,32,0.4);
+    font-size:14px;letter-spacing:1px;
+  }
+  .about-copy p{font-size:16px;line-height:1.8;color:var(--muted);margin:0 0 18px;}
+  .pill-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;}
+  .pill-row span{
+    border:1.5px solid var(--ink);
+    border-radius:999px;
+    padding:10px 18px;
+    font-size:12px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;
+  }
+
+  /* SERVICES */
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .service-card{
+    background:var(--pink-soft);
+    border-radius:22px;
+    padding:32px 28px;
+  }
+  .service-card h3{font-size:21px;margin-bottom:14px;}
+  .service-card .for{font-size:13px;color:var(--muted);margin-bottom:16px;}
+  .service-card .for strong{color:var(--ink);}
+  .service-card ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink);line-height:1.9;}
+
+  /* WORK */
+  .client-banner{
+    display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:18px;
+    border-bottom:1px solid var(--line);padding-bottom:24px;margin-bottom:48px;
+  }
+  .client-banner h3{font-size:24px;}
+  .client-banner p{font-size:14px;color:var(--muted);margin:8px 0 0;}
+  .client-tag{
+    background:var(--ink);color:var(--cream);
+    font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;
+    padding:8px 16px;border-radius:999px;
+  }
+  .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:30px;}
+  .work-card{
+    background:var(--paper);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(38,35,32,0.08);
+  }
+  .work-thumb{
+    height:190px;
+    background:linear-gradient(135deg,#cfc4d6,#e9b9c4);
+    display:flex;align-items:center;justify-content:center;
+    color:rgba(38,35,32,0.45);
+    font-size:13px;letter-spacing:0.5px;text-align:center;padding:0 18px;
+  }
+  .work-card:nth-child(2) .work-thumb{background:linear-gradient(135deg,#e9d6a3,#e9a3a3);}
+  .work-card:nth-child(3) .work-thumb{background:linear-gradient(135deg,#a3c9c2,#cfc4d6);}
+  .work-card:nth-child(4) .work-thumb{background:linear-gradient(135deg,#e9b9c4,#cfc4d6);}
+  .work-body{padding:24px 26px;}
+  .work-body .tag{font-size:11px;color:var(--pink-deep);font-weight:600;letter-spacing:1px;text-transform:uppercase;}
+  .work-body h4{font-family:'Playfair Display',serif;font-size:19px;margin:10px 0 10px;font-weight:700;}
+  .work-body p{font-size:13.5px;color:var(--muted);line-height:1.7;margin:0 0 16px;}
+  .work-metrics{display:flex;gap:22px;flex-wrap:wrap;}
+  .work-metrics div{font-size:12px;color:var(--muted);}
+  .work-metrics strong{display:block;font-family:'Playfair Display',serif;font-size:19px;color:var(--ink);}
+
+  /* RESULTS */
+  .results-note{font-family:'Playfair Display',serif;font-style:italic;font-size:22px;color:var(--muted);margin-bottom:50px;}
+  .stat-list div{
+    display:flex;justify-content:space-between;align-items:baseline;
+    border-top:1px solid var(--line);
+    padding:28px 0;
+    gap:30px;
+  }
+  .stat-list div:last-child{border-bottom:1px solid var(--line);}
+  .stat-num{font-family:'Jost',sans-serif;font-weight:300;font-size:54px;white-space:nowrap;}
+  .stat-desc{font-size:14.5px;color:var(--muted);max-width:340px;text-align:right;line-height:1.6;}
+  .reach-bar-wrap{margin-top:54px;}
+  .reach-bar-wrap h4{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:14px;font-weight:500;}
+  .reach-bar{display:flex;height:34px;border-radius:999px;overflow:hidden;}
+  .reach-bar div{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;}
+  .reach-followers{background:var(--pink);width:2.6%;color:transparent;}
+  .reach-non{background:var(--ink);width:97.4%;color:var(--cream);}
+  .reach-labels{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:10px;gap:24px;}
+
+  /* PROCESS */
+  .process-dark{
+    background:linear-gradient(135deg,#3a342f,#1b1916);
+    padding:90px 0;
+    text-align:center;
+  }
+  .process-dark h2{color:var(--cream);font-size:54px;}
+  .process-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:54px;}
+  .process-step{
+    border:1px solid rgba(245,241,234,0.25);
+    border-radius:18px;padding:30px 22px;color:var(--cream);
+  }
+  .process-step .num{font-family:'Playfair Display',serif;color:var(--pink);font-size:20px;margin-bottom:10px;}
+  .process-step p{font-size:13.5px;color:#cfc8ba;line-height:1.7;margin:0;}
+
+  /* CONTACT */
+  .contact{
+    background:var(--charcoal);color:var(--cream);
+    padding:110px 0;text-align:center;
+  }
+  .contact h2{font-size:54px;color:var(--cream);}
+  .contact-btn{
+    display:inline-block;margin-top:36px;
+    background:var(--pink);color:var(--charcoal);
+    padding:17px 38px;border-radius:999px;
+    font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;
+  }
+  .contact-btn:hover{background:var(--pink-deep);color:#fff;}
+  .contact-row{
+    display:flex;justify-content:center;gap:40px;margin-top:50px;flex-wrap:wrap;
+    font-size:14px;color:#bdb6a8;
+  }
+  footer{
+    background:#0f0e0c;color:#7a7466;
+    text-align:center;padding:22px 0;font-size:12px;letter-spacing:1px;
+  }
+
+  @media(max-width:880px){
+    .hero-title{font-size:38px;}
+    .about-grid,.services-grid,.work-grid,.process-steps{grid-template-columns:1fr;}
+    .nav-links{display:none;}
+    .contact h2,.process-dark h2{font-size:34px;}
+    .stat-num{font-size:38px;}
+    .stat-list div{flex-direction:column;align-items:flex-start;gap:8px;}
+    .stat-desc{text-align:left;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">Devanshi</div>
+    <div class="nav-links">
+      <a href="file:///Users/devanshiaggarwal/Library/Application%20Support/Claude/local-agent-mode-sessions/2452925d-ec5e-4a84-89c2-504cde6215ad/16c7a211-978f-4c9b-8f1b-2140cafbec06/local_74143a66-e4aa-4166-ad02-e25e3b63b87c/outputs/manhas_social_media_portfolio.html#about">About Me</a>
+      <a href="file:///Users/devanshiaggarwal/Library/Application%20Support/Claude/local-agent-mode-sessions/2452925d-ec5e-4a84-89c2-504cde6215ad/16c7a211-978f-4c9b-8f1b-2140cafbec06/local_74143a66-e4aa-4166-ad02-e25e3b63b87c/outputs/manhas_social_media_portfolio.html#services">Services</a>
+      <a href="file:///Users/devanshiaggarwal/Library/Application%20Support/Claude/local-agent-mode-sessions/2452925d-ec5e-4a84-89c2-504cde6215ad/16c7a211-978f-4c9b-8f1b-2140cafbec06/local_74143a66-e4aa-4166-ad02-e25e3b63b87c/outputs/manhas_social_media_portfolio.html#work">Work</a>
+      <a href="file:///Users/devanshiaggarwal/Library/Application%20Support/Claude/local-agent-mode-sessions/2452925d-ec5e-4a84-89c2-504cde6215ad/16c7a211-978f-4c9b-8f1b-2140cafbec06/local_74143a66-e4aa-4166-ad02-e25e3b63b87c/outputs/manhas_social_media_portfolio.html#results">Results</a>
+      <a href="file:///Users/devanshiaggarwal/Library/Application%20Support/Claude/local-agent-mode-sessions/2452925d-ec5e-4a84-89c2-504cde6215ad/16c7a211-978f-4c9b-8f1b-2140cafbec06/local_74143a66-e4aa-4166-ad02-e25e3b63b87c/outputs/manhas_social_media_portfolio.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero grid-bg">
+  <div class="wrap">
+    <div class="hero-eyebrow">Social Media Manager &amp; Content Strategist</div>
+    <h1 class="hero-title">Let's make your brand <span class="script">the one</span> everyone remembers</h1>
+    <p class="hero-sub">Freelance social media manager — currently running content &amp; strategy for Manhas, plus other independent clients. Pretty feeds, real numbers.</p>
+    <a href="file:///Users/devanshiaggarwal/Library/Application%20Support/Claude/local-agent-mode-sessions/2452925d-ec5e-4a84-89c2-504cde6215ad/16c7a211-978f-4c9b-8f1b-2140cafbec06/local_74143a66-e4aa-4166-ad02-e25e3b63b87c/outputs/manhas_social_media_portfolio.html#work" class="hero-btn">See the Work</a>
+  </div>
+</header>
+
+<section class="hook">
+  <div class="wrap">
+    <div class="hook-note">
+      Feeling like you're posting non-stop and still getting crickets? You deserve a strategy that <span>actually works</span> — and feels like you. Let's make your Instagram work for you, not the other way around.
+    </div>
+  </div>
+</section>
+
+<section class="section grid-bg" id="about">
+  <div class="wrap">
+    <div class="eyebrow">01 — Get to know me</div>
+    <h2>About Me</h2>
+    <div class="about-grid">
+      <div class="about-photo">Photo</div>
+      <div class="about-copy">
+        <p>I'm Devanshi — a freelance social media manager who helps brands turn an Instagram page into an actual asset: consistent content, a clear voice, and numbers that move.</p>
+        <p>Right now I manage content and strategy for <strong>Manhas</strong>, a UAE-based modest fashion label, alongside other independent clients. My work spans content calendars, reels, captions, community management, and performance reporting.</p>
+        <p>Whether you're a small label, a coach, or a multi-hyphenate brand — I meet you where you are and bring clarity, ease, and visibility to your digital world.</p>
+        <div class="pill-row">
+          <span>I speak fluent Canva</span>
+          <span>Secretly love analytics</span>
+          <span>Believe vibes &amp; data coexist</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="eyebrow">02 — How I can help</div>
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Content Strategy</h3>
+        <div class="for"><strong>For:</strong> brands wanting a clear posting plan</div>
+        <ul>
+          <li>Monthly content calendar</li>
+          <li>Pillar &amp; theme planning</li>
+          <li>Posting cadence built on data</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Reels &amp; Production</h3>
+        <div class="for"><strong>For:</strong> brands wanting to be seen, not just followed</div>
+        <ul>
+          <li>Concept &amp; shoot direction</li>
+          <li>Editing with trend-aware audio</li>
+          <li>Hook-first scripting</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Reporting &amp; Growth</h3>
+        <div class="for"><strong>For:</strong> brands who want proof, not vibes</div>
+        <ul>
+          <li>Monthly reach &amp; engagement reports</li>
+          <li>Growth recommendations</li>
+          <li>Community &amp; DM management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section grid-bg" id="work">
+  <div class="wrap">
+    <div class="eyebrow">03 — Selected work</div>
+    <h2>My Recent Work</h2>
+
+    <div class="client-banner">
+      <div>
+        <h3>Client Spotlight — Manhas</h3>
+        <p>@manhas_abayas · UAE-based abaya &amp; modest fashion label · Client engagement</p>
+      </div>
+      <div class="client-tag">Client, not a collab</div>
+    </div>
+
+    <div class="work-grid">
+      <div class="work-card">
+        <div class="work-thumb">Reel — "Modesty is the new luxury"</div>
+        <div class="work-body">
+          <div class="tag">Reel · Top performer</div>
+          <h4>"Modesty is the new luxury"</h4>
+          <p>Pinned reel pairing a styled abaya look with a confident voiceover hook. Posted 4 days ago.</p>
+          <div class="work-metrics">
+            <div><strong>320</strong>Likes</div>
+            <div><strong>6,677</strong>Views</div>
+            <div><strong>5,155</strong>Reached</div>
+          </div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-thumb">Reel — "Girl math: every abaya is a necessity"</div>
+        <div class="work-body">
+          <div class="tag">Reel · Trending audio</div>
+          <h4>"Girl math" Reel</h4>
+          <p>Trend-format reel using "girl math" framing to talk about abayas as everyday essentials. Posted 5 days ago.</p>
+          <div class="work-metrics">
+            <div><strong>223</strong>Likes</div>
+            <div><strong>6,327</strong>Views</div>
+            <div><strong>4,806</strong>Reached</div>
+          </div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-thumb">Story Highlights System</div>
+        <div class="work-body">
+          <div class="tag">Highlights</div>
+          <h4>Story Highlight Architecture</h4>
+          <p>Organized profile into Deets, Feedbacks, Manhas Girls, Mood, and Eid Drop highlights for clearer browsing &amp; trust-building.</p>
+          <div class="work-metrics">
+            <div><strong>5</strong>Active Highlights</div>
+          </div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-thumb">Eid Drop ✨ Campaign</div>
+        <div class="work-body">
+          <div class="tag">Campaign</div>
+          <h4>Eid Drop ✨</h4>
+          <p>Seasonal launch campaign built around new arrivals, styled lifestyle shots, and a dedicated story highlight.</p>
+          <div class="work-metrics">
+            <div><strong>110</strong>Total Grid Posts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="results" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="eyebrow">04 — By the numbers</div>
+    <h2>Results that speak for themselves</h2>
+    <p class="results-note">Real performance numbers pulled directly from the @manhas_abayas Instagram account.</p>
+
+    <div class="stat-list">
+      <div>
+        <div class="stat-num">320</div>
+        <div class="stat-desc">likes on the top-performing reel — a pinned post for the Manhas account</div>
+      </div>
+      <div>
+        <div class="stat-num">6,677</div>
+        <div class="stat-desc">views on that same reel, reaching far beyond the existing follower base</div>
+      </div>
+      <div>
+        <div class="stat-num">5,155</div>
+        <div class="stat-desc">accounts reached from a single reel — most of them brand-new eyes</div>
+      </div>
+      <div>
+        <div class="stat-num">1,069</div>
+        <div class="stat-desc">followers grown organically across 110 posts, no paid ads</div>
+      </div>
+    </div>
+
+    <div class="reach-bar-wrap">
+      <h4>Reach breakdown — top reel ("Modesty is the new luxury")</h4>
+      <div class="reach-bar">
+        <div class="reach-followers"></div>
+        <div class="reach-non">97.4% non-followers</div>
+      </div>
+      <div class="reach-labels">
+        <span>2.6% followers</span>
+        <span>Most reach came from non-followers — content is pulling in new eyes, not just preaching to the existing audience.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process-dark">
+  <div class="wrap">
+    <h2>Process</h2>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="num">01 — Discover</div>
+        <p>A deep-dive into the brand, the audience, and what's already working (or not).</p>
+      </div>
+      <div class="process-step">
+        <div class="num">02 — Build</div>
+        <p>Content calendars, reels, and captions built around real data, not guesses.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">03 — Report</div>
+        <p>Monthly numbers, translated into plain next steps — not just a screenshot dump.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow">05 — Get in touch</div>
+    <h2>Let's <span class="script">collaborate</span></h2>
+    <a href="mailto:devanshiaggarwal49@gmail.com" class="contact-btn">Email Me</a>
+    <div class="contact-row">
+      <span>Email: devanshiaggarwal49@gmail.com</span>
+      <span>IG: @yourhandle</span>
+    </div>
+  </div>
+</section>
+
+<footer>DEVANSHI — PORTFOLIO © 2026</footer>
+
+
+
+</body></html>
